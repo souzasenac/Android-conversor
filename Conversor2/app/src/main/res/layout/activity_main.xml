@@ -20,44 +20,48 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/skbMetros"
         android:layout_width="278dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/altura" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtPes"
         android:layout_width="wrap_content"
         android:layout_height="29dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="96dp"
         android:text="0,00pé(s)"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/seekBar" />
+        app:layout_constraintTop_toTopOf="@+id/skbMetros" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="45dp"
+        android:id="@+id/txtMetros"
+        android:layout_width="97dp"
         android:layout_height="20dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
         android:text="0,00m"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintEnd_toStartOf="@+id/txtPes"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/bntConverter"
+        app:layout_constraintTop_toBottomOf="@+id/skbMetros" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bntConverter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="188dp"
         android:text="CONVERTER"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/seekBar" />
+        app:layout_constraintTop_toTopOf="@+id/skbMetros"
+        tools:layout_editor_absoluteX="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
